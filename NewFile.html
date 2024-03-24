@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type = "text/javascript" src = "./jquery.js"></script>
+<script type = "text/javascript" src = "./ion.sound.js"></script>
+<script type = "text/javascript" src = "./vocapia.js"></script>
+</head>
+<body>
+<script type = "text/javascript">
+document.write(
+"<table border = 0 cellpadding = 0 cellspacing = 0><tr>");
+for(i = 0; i < 22; i++)
+	document.write(
+	"<td><img id = \"" + x[i] + "\" src = \"" + rkey0 + n[i] +
+	".jpg\" onMouseOver = \"this.src='" + rkey1 + n[i] +
+	".jpg'\" onMouseOut = \"this.src='" + rkey0 + n[i] +
+	".jpg'\"></td>");
+document.write("</tr><tr>");
+for(i = 0; i < 22; i++)
+	document.write(
+	"<td><div id=\"b" + x[i] + "\">" +
+	"<img src = \"" + lamp0 + "\"></div></td>");
+document.write("</tr></tr align = center>");
+for(i = 0; i < 22; i++)
+	document.write("<td>" + x[i] + "</td>");
+document.write("</tr></table>");
+</script>
+<hr>
+<input type = radio id = "rp" name = "r1"
+value = "play" checked = "checked">play
+<input type = radio id = "ri" name = "r1"
+value = "input">input
+<form>
+<textarea id ="ta" rows = "5" cols = "100"></textarea>
+<input type = button id="bu" onclick = "plays();"
+value = "start">
+<input type = button id = "re" onclick = "rest();"
+value = "rest">
+<input type = button id="cl" onclick = "clearnote();"
+value = "clear">
+</form>>
+</body>
+</html>
